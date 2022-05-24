@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(//www.jotform.com/images/brushed.png);
+            font-family: Inter, sans-serif;
+            color: #2c3345;
+        }
+        
+        .main {
+            width: 40%;
+            height: auto;
+            margin-inline: auto;
+            margin-bottom: 3rem;
+            border: 0px solid;
+            box-shadow: 0px 6px 4px -1px #888888;
+            padding: 2.3rem;
+        }
+
+        .maintitle {
+            font-size: 2.5rem;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 0.4rem;
+            color: #57647e;
+        }
+
+        .sname,
+        .addname, .email {
+            font-size: 1.2rem;
+        }
+
+        .form-text-box {
+            height: 2.5em;
+            width: 13em;
+            border: 2px solid #b8bdc9;
+            background-color: #ffffffaf;
+            border-radius: 0.3em;
+            margin-top: 1em;
+            padding: 0 0.625em;
+        }
+
+        .form-text-box:focus {
+            outline: none;
+            border: 2px solid #b8bdc9;
+            box-shadow: 0px 5px 15px -3px #6c6c6c8d;
+        }
+
+        .form-label-1 {
+            color: #57647e;
+        }
+
+        .add {
+            width: 95%;
+        }
+        .comm{
+            width: 95%;
+            height: 30vh;
+        }
+
+        .city {
+            width: 42%;
+        }
+        button{
+            background-color: #18bd5b;
+            border: 1px solid #18bd5b;
+            color: #fff;
+            height: 3em;
+            cursor: pointer;
+            padding: 0.2rem 0.5rem;
+            font-size: 1.1rem;
+            border-radius: 4%;
+        }
+        div{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .btnclr{
+            padding: 0.2rem 1.5rem ;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <form>
+            <h1 class="maintitle">Student Registration Form</h1>
+            <p>Fill out the form carefully for registration</p> <br><br>
+            <label for="first-name" class="sname">Student Name</label><br>
+            <input type="text" id="first-name" class="form-text-box">
+            <input type="text" id="middle-name" class="form-text-box">
+            <input type="text" id="last-name" class="form-text-box"><br><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <!-- &nbsp; this is for space -->
+            <label for="student_name-first" class="form-label-1">First Name</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <!-- &nbsp; this is for space -->
+            <label for="student_name-middle" class="form-label-1">Middle Name</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp;
+            <label for="student_name-last" class="form-label-1">Last Name</label><br /><br />
+            <label for="form-dob" class="form-label">Birth Date</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="gender">Gender</label> <br>
+            <input id="form-dob" type="date" class="form-text-box">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="form-text-box" id="gender">
+                <option>Select your Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select> <br><br><br>
+            <label for="address" class="addname"> Address</label><br>
+            <input type="text" id="address" class="form-text-box add"> <br>
+            &nbsp;
+            <label for="address" class="form-label-1">Street Address</label> <br><br>
+            <input type="text" id="address-2" class="form-text-box add"> <br>
+            &nbsp;
+            <label for="address-2" class="form-label-1">Street Address Line 2</label> <br><br>
+            <input type="text" id="city" class="form-text-box city">
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="state" class="form-text-box city">
+            <br>
+            &nbsp;
+            <label for="city" class="form-label-1">City</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="state" class="form-label-1">State/Province</label><br><br>
+            <input type="text" id="postal" class="form-text-box add"> <br>
+            &nbsp;
+            <label for="postal" class="form-label-1">Postal/Zip Code</label> <br><br><br>
+             <label for="mail" class="email">Student E-mail</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <label for="mblnumber" class="email">Mobile Number</label><br>
+             <input type="email" id="mail" class="form-text-box city" placeholder="ex: myname@example.com">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="number" id="mblnumber" class="form-text-box city" placeholder="(9842357891)"><br>
+             &nbsp; <label for="mail" class="form-label-1">example@example.com</label><br><br><br>
+             <label for="phnnumber" class="email">Phone Number</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <label for="worknumber" class="email">Work Number</label><br>
+             <input type="number" id="phnnumber" class="form-text-box city" placeholder="(078)540584">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="number" id="worknumber" class="form-text-box city" placeholder="(000)000000"><br><br><br>
+             <label for="company" class="email">Company</label><br>
+             <input type="text" id="company" class="form-text-box city"><br><br><br>
+             <label for="course" class="email">Course</label> <br>
+             <select class="form-text-box city" id="course">
+                <option value="">Please Select</option>
+                <option value="Windows 8">Windows 8</option>
+                <option value="Introduction to Linux">Introduction to Linux</option>
+                <option value="English 101">English 101</option>
+                <option value="English 102">English 102</option>
+                <option value="Creative writing 1">Creative Writing 1</option>
+                <option value="Creative writing 2">Creative Writing 2</option>
+                <option value="History 101">History 101</option>
+                <option value="History 102">History 102</option>
+                <option value="Math 101">Math 101</option>
+                <option value="Math 102">Math 102</option>
+            </select> <br><br><br>
+            <label for="comment" class="email" >Additional Comments</label> <br>
+            <textarea name="Addcomment" class="form-text-box comm"  id="comment" cols="40" rows="10"></textarea><br><br>
+            <div>
+                <button type="submit">Submit Application</button>
+                <button type="reset" class="btnclr">Clear Fields</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
